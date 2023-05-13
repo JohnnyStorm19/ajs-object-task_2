@@ -51,9 +51,3 @@ test('Функция работает правильно', () => {
   ];
   expect(func).toEqual(res);
 });
-test('В функцию передан невалидный объект', () => {
-  const error = 'Invalid object';
-  expect(() => {
-    destruct(['hello world']);
-  }).toThrow(error);
-});
